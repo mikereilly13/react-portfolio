@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, body {
+  height: 100vh; /* Set the height of html and body to 100% */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  background: rgba(255, 255, 255, 0.15); 
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  top: 30%;
+  left: 20%;
+  position: absolute;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  height: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2%;
+  position: absolute;
+  top: 8%;
+  left: 1%;
+  background: rgba(255, 255, 255, 0.25); /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
+
+.contact {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-shown {
+  position: absolute;
+  top: 8%;
+  right: 4%;
+}
+
+.contact-form-hidden {
+  display: none;
+}
+
+
+.education {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 2%;
+  padding-bottom: 3%;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  background: rgba(255, 255, 255, 0.25); /* Transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.skill-row {
+  height: 25%;
+  background-color: rgb(42, 6, 70);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gradient-bg {
+  background-image: linear-gradient(90deg, rgb(34, 211, 238), rgb(37, 99, 235));
+  height: 200%;
+}
+
+.main {
+  height: 120vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.skill-logo {
+  height: 51%;
+  width: 51%;
+}
+
+.education-logo {
+  height: 11%;
+  width: 11%;
+}
+
+.contact-logo {
+  height: 10%;
+  width: 10%;
+}
+
+.resume {
+  top: 10%;
+  right: 4%;
+  position: absolute;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
