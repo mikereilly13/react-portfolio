@@ -3,12 +3,20 @@ import NavBar from '../components/navbar';
 function ProjectsPage() {
     return ( 
         <>
-            <div className="gradient-bg main">
+            <div>
                 <NavBar />
-                <h1>Projects</h1>  
-                <h1>Web Development</h1>
-                <h1>Data Science</h1>
-                <h1>Workplace Automation</h1>  
+                <div className="mt-2 text-center">
+                    <h1 className="text-6xl font-bold">Projects</h1> 
+                </div>
+                <div className="mt-4 border">
+                    <h1 className="ml-2 text-4xl font-bold">Web Development</h1>
+                </div> 
+                <div className="mt-4 border">
+                    <h1 className="ml-2 text-4xl font-bold">Data Science</h1>
+                </div>
+                <div className="mt-4 border">
+                    <h1 className="ml-2 text-4xl font-bold">Workplace Automation</h1>
+                </div> 
             </div>
         </>
      );

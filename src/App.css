@@ -1,36 +1,37 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html, body {
   height: 100vh; /* Set the height of html and body to 100% */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
+
 }
 
-h2 {
-  color: white;
+.data-science {
+  position: absolute;
+  top: 8%;
+  right: 8%;
 }
 
 .navbar {
   background: rgba(255, 255, 255, 0.15); 
   backdrop-filter: blur(10px); /* Blur effect */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  width: 50%;
-  top: 30%;
-  left: 20%;
-  position: absolute;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  height: 50%;
+  width: 100%;
+  height: 10%;
 }
 
 .about {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   padding: 2%;
   position: absolute;
   top: 8%;
@@ -40,17 +41,16 @@ h2 {
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-.contact {
-  border-radius: 8px;
+.navbar-glass {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   position: absolute;
-  top: 4%;
-  left: 2%;
+  top: 0%;
   background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .contact-form-shown {
@@ -68,15 +68,44 @@ h2 {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
   padding: 2%;
   padding-bottom: 3%;
   position: absolute;
-  top: 50%;
-  left: 2%;
+  top: 8%;
+  right: 2%;
   background: rgba(255, 255, 255, 0.25); /* Transparent white */
   backdrop-filter: blur(10px); /* Blur effect */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background-color: rgb(75, 74, 75);
+  height: 10%;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.github-logo {
+  height: 50px;
+  width: 200px;
+}
+
+.linkedin-logo {
+  height: 50px;
+  width: 200px;
+  
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  align-items: center;
+  position: absolute;
+  top: 8%;
+  left: 40%;
 }
 
 .skill-row {
@@ -101,8 +130,8 @@ h2 {
 }
 
 .skill-logo {
-  height: 51%;
-  width: 51%;
+  height: 11%;
+  width: 15%;
 }
 
 .education-logo {
@@ -119,6 +148,12 @@ h2 {
   top: 10%;
   right: 4%;
   position: absolute;
+}
+
+.web-dev {
+  position: absolute;
+  top: 8%;
+  left: 13%;
 }
 
 @tailwind base;

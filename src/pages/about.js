@@ -8,12 +8,11 @@ function AboutPage() {
     return ( 
         <>
             <div className="">
-                <div className="gradient-bg main">
+                <div>
                     <NavBar />
                     <About />
                     <Education />
                     <ContactForm />
-                    <ResumeDownload />
                 </div>
             </div> 
         </>

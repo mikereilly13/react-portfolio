@@ -7,7 +7,7 @@ function Education() {
     return ( 
         <>
             <div className="education">
-                <h1 className="text-4xl font-bold text-white">Education</h1>
+                <h1 className="text-4xl font-bold ">Education</h1>
                 <div className="flex flex-row items-center mt-4">
                     <img src={MIT} alt="" className="education-logo"/>
                     <div className="ml-4 flex-column">
