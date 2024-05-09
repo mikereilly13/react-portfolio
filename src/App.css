@@ -10,13 +10,10 @@ html, body {
   height: 100vh; /* Set the height of html and body to 100% */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
-
 }
 
-.data-science {
-  position: absolute;
-  top: 8%;
-  right: 8%;
+.desktop-h1 {
+  font-size: 2em;
 }
 
 .navbar {
@@ -121,6 +118,10 @@ html, body {
   height: 200%;
 }
 
+.full-stack {
+  height: 105%;
+}
+
 .main {
   height: 120vh;
   width: 100%;
@@ -129,8 +130,18 @@ html, body {
   overflow: hidden;
 }
 
-.skill-logo {
-  height: 11%;
+.skill-logo-stats {
+  height: 100%;
+  width: 13%;
+}
+
+.skill-logo-medium {
+  height: 100%;
+  width: 45%;
+}
+
+.skill-logo-large {
+  height: 100%;
   width: 15%;
 }
 
@@ -154,6 +165,27 @@ html, body {
   position: absolute;
   top: 8%;
   left: 13%;
+  height: 70%;
+}
+
+.data-science {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  height: 70%;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  .mobile-text-h1 {
+    font-size: 1rem;
+  }
+  .navbar {
+    background: black;
+  }
+  .footer {
+    justify-content: space-between;
+  }
 }
 
 @tailwind base;

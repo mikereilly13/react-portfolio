@@ -18,47 +18,48 @@ import { SlWrench } from "react-icons/sl";
 
 
 function WebDevelopment() {
-    const skills = {
-        1: {
-            title: "Full Stack Software Applications",
-            images: [MongoDB, Express, ReactLogo, NodeLogo],
-            icon: <FaDatabase />
-        },
-        2: {
-            title: "Cloud Architecture",
-            images: [AWSLogo, GoogleCloud],
-            icon: <IoIosCloudOutline />
-        },
-        3: {
-            title: "Tools",
-            images: [GithubLogo, JiraLogo, TrelloLogo],
-            icon: <SlWrench />
-        }
-    };
-
+    
     return (
         <>
-            <div className="flex flex-col w-1/3 ml-4 text-center web-dev">
+            <div className="flex flex-col justify-between w-1/3 ml-4 text-center web-dev">
                 <div className="flex flex-row items-center justify-center w-full gap-4 mt-4 ">
-                    <h1 className="text-4xl font-bold text-center text-sky-600">Web Development</h1>
-                    <LuComputer className="text-4xl" />
+                    <h1 className="flex font-bold text-center text-sky-600 desktop-h1 mobile-text-h1">Web Development</h1>
+                    <LuComputer className="text-4xl"/>
                 </div>
-                {Object.values(skills).map((skill, i) => (
-                <div className="flex flex-col justify-center w-full gap-4 p-1 mt-4 border rounded-lg shadow">
-                    <div className="flex flex-row items-center justify-center gap-4">
-                        <h1 className="text-2xl font-bold text-sky-600">{skill.title}</h1>
-                        {skill.icon && <h2>{skill.icon}</h2>}
+                <div className="w-full border rounded-lg shadow" style={{minWidth: "200px"}}>
+                    <div className="flex flex-row items-center justify-center w-full gap-4">
+                        <h1 className="text-3xl font-bold">Full Stack Apps</h1>
+                        <FaDatabase className="text-3xl font-bold text-sky-600"/>
                     </div>
-                    <div className="flex flex-row items-center justify-between m-4">
-                    {skill.images && skill.images.map((image, j) => (
-                                <img key={j} src={image} alt="" className="skill-logo" />
-                            ))}
+                    <div className="flex flex-row items-center justify-between mt-4 mb-2 ml-4 mr-4">
+                        <img src={MongoDB} alt="" className="skill-logo-large"/>
+                        <img src={Express} alt="" className="skill-logo-large"/>
+                        <img src={ReactLogo} alt="" className="skill-logo-large"/>
+                        <img src={NodeLogo} alt="" className="skill-logo-large"/>
                     </div>
                 </div>
-                
-                ))}
+                <div className="w-full mt-4 border rounded-lg shadow" style={{minWidth: "200px"}}>
+                    <div className="flex flex-row items-center justify-center w-full gap-4">
+                        <h1 className="text-3xl font-bold">Cloud</h1>
+                        <IoIosCloudOutline className="text-3xl font-bold text-sky-600" />
+                    </div>
+                    <div className="flex flex-row items-center justify-between mt-4 mb-4 ml-4 mr-4">
+                        <img src={AWSLogo} alt="" className="skill-logo-medium"/>
+                        <img src={GoogleCloud} alt="" className="skill-logo-medium"/>
+                    </div>
+                </div>
+                <div className="w-full mt-4 border rounded-lg shadow" style={{minWidth: "200px"}}>
+                    <div className="flex flex-row items-center justify-center w-full gap-4">
+                        <h1 className="text-3xl font-bold">Tools</h1>
+                        <SlWrench className="text-3xl font-bold text-sky-600" />
+                    </div>
+                    <div className="flex flex-row items-center justify-between mt-4 mb-4 ml-4 mr-4">
+                        <img src={GithubLogo} alt="" className="skill-logo-large"/>
+                        <img src={JiraLogo} alt="" className="skill-logo-large"/>
+                        <img src={TrelloLogo} alt="" className="skill-logo-large"/>
+                    </div>
+                </div>
             </div>
-
         </>
     );
 }
